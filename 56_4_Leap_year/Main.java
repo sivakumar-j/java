@@ -1,4 +1,4 @@
-public class Main_of_LeapYear {
+public class Main {
     public static void main(String[] args) {
         int v_year = 2500;
         boolean leap_or_not = LeapYear.isLeapYear(v_year);
