@@ -1,3 +1,5 @@
+Chapter 77.29 https://www.udemy.com/course/java-the-complete-java-developer-course/learn/quiz/4585936#questions/12120292
+
 Write a class with the name SimpleCalculator. The class needs two fields (instance variables) with names firstNumber and secondNumber both of type double.
 
 Write the following methods (instance methods):
