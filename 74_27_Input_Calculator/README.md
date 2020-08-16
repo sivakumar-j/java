@@ -1,3 +1,5 @@
+Chapter 74.27 https://www.udemy.com/course/java-the-complete-java-developer-course/learn/quiz/4585882#questions/12120292
+
 Write a method called inputThenPrintSumAndAverage that does not have any parameters.
 
 The method should not return anything (void) and it needs to keep reading int numbers from the keyboard.
