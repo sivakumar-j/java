@@ -1,8 +1,6 @@
 package com.company;
 
-/**
- * Created by dev on 31/07/15.
- */
+
 public class Printer {
     private int tonerLevel;
     private int pagesPrinted;
