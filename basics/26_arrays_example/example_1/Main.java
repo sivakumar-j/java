@@ -4,45 +4,45 @@ import java.util.Scanner;
 
 public class Main {
 
-    private static Scanner scanner = new Scanner(System.in);
+    private static Scanner v_scanner = new Scanner(System.in);
 
     public static void main(String[] args) {
-        System.out.println("Enter count:");
-        int count = scanner.nextInt();
-        scanner.nextLine();
+        System.out.println("Enter v_count:");
+        int v_count = v_scanner.nextInt();
+        v_scanner.nextLine();
 
-        int[] returnedArray = readIntegers(count);
-        int returnedMin = findMin(returnedArray);
+        int[] v_returnedArray = readIntegers(v_count);
+        int v_returnedMin = findMin(v_returnedArray);
 
-        System.out.println("min = " + returnedMin);
+        System.out.println("min = " + v_returnedMin);
 
     }
 
-    private static int[] readIntegers(int count) {
+    private static int[] readIntegers(int v_count) {
 
-        int[] array = new int[count];
+        int[] v_array = new int[v_count];
 
-        for(int i = 0; i<array.length; i++) {
-            System.out.println("Enter a number:");
-            int number = scanner.nextInt();
-            scanner.nextLine();
-            array[i] = number;
+        for(int i = 0; i<v_array.length; i++) {
+            System.out.println("Enter a v_number:");
+            int v_number = v_scanner.nextInt();
+            v_scanner.nextLine();
+            v_array[i] = v_number;
         }
-        return array;
+        return v_array;
     }
 
-    private static int findMin(int[] array) {
+    private static int findMin(int[] v_array) {
 
-        int min = Integer.MAX_VALUE;
+        int v_min = Integer.MAX_VALUE;
 
-        for(int i=0; i<array.length; i++) {
-            int value = array[i];
+        for(int i=0; i<v_array.length; i++) {
+            int v_value = v_array[i];
 
-            if(value < min) {
-                min = value;
+            if(v_value < v_min) {
+                v_min = v_value;
             }
         }
 
-        return min;
+        return v_min;
     }
 }
