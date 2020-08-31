@@ -54,26 +54,27 @@ public class Main {
         System.out.println("\t 3 - To modify an item in the list.");
         System.out.println("\t 4 - To remove an item from the list.");
         System.out.println("\t 5 - To search for an item in the list.");
-        System.out.println("\t 6 - To quit the application.");
+        System.out.println("\t 6 - To check the process array functionality.");
+        System.out.println("\t 7 - To quit the application.");
     }
 
     public static void addItem() {
-        System.out.print("Please enter the grocery item: ");
+        System.out.print("Enter the grocery item to be added : ");
         groceryList.addGroceryItem(scanner.nextLine());
     }
 
     public static void modifyItem() {
         System.out.print("Current item name: ");
-        String itemNo = scanner.nextLine();
+        String currentItem = scanner.nextLine();
         System.out.print("Enter new item: ");
         String newItem = scanner.nextLine();
-        groceryList.modifyGroceryItem(itemNo, newItem);
+        groceryList.modifyGroceryItem(currentItem, newItem);
     }
 
     public static void removeItem() {
         System.out.print("Enter item name: ");
-        String itemNo = scanner.nextLine();
-        groceryList.removeGroceryItem(itemNo);
+        String itemName = scanner.nextLine();
+        groceryList.removeGroceryItem(itemName);
     }
 
     public static void searchForItem() {
@@ -87,15 +88,26 @@ public class Main {
     }
 
     public static void processArrayList() {
-        ArrayList<String> newArray = new ArrayList<String>();
-        newArray.addAll(groceryList.getGroceryList());
+        ArrayList<String> groceryList_1 = new ArrayList<String>();
+        groceryList_1.addAll(groceryList.getGroceryList());
 
-        ArrayList<String> nextArray = new ArrayList<String>(groceryList.getGroceryList());
+        System.out.println("You have " + groceryList_1.size() + " items in your grocery_1 list");
+        for(int i=0; i< groceryList_1.size(); i++) {
+            System.out.println((i+1) + ". " + groceryList_1.get(i));
+        }
 
+        ArrayList<String> groceryList_2 = new ArrayList<String>(groceryList.getGroceryList());
+
+        System.out.println("You have " + groceryList_2.size() + " items in your groceryList_2 list");
+        for(int i=0; i< groceryList_2.size(); i++) {
+            System.out.println((i+1) + ". " + groceryList_2.get(i));
+        }
+
+        System.out.println("Grocery List size is : " + groceryList.getGroceryList().size());
         String[] myArray = new String[groceryList.getGroceryList().size()];
+        //check laterSystem.out.println("myArray value before toArray conversion : " + myArray);
         myArray = groceryList.getGroceryList().toArray(myArray);
-
+        //check later System.out.println("myArray value after toArray conversion  : " + myArray);
 
     }
-
 }
