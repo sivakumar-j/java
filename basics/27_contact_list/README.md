@@ -1,5 +1,7 @@
 Udemy : https://www.udemy.com/course/java-the-complete-java-developer-course/learn/lecture/9331942#questions
 
+Example of Arrays
+
 
 * Create a program that implements a simple mobile phone with the following capabilities.
 * Able to store, modify, remove and query contact names.
