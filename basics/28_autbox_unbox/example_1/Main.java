@@ -28,7 +28,7 @@ public class Main {
         ArrayList<String> strArrayList = new ArrayList<String>();
         strArrayList.add("Tim");
 
-//        ArrayList<int> intArrayList = new ArrayList<int>();
+//        ArrayList<int> intArrayList = new ArrayList<int>(); cannot be done because argument is of primitive type. to overcome this we use the above class
         ArrayList<IntClass> intClassArrayList = new ArrayList<IntClass>();
         intClassArrayList.add(new IntClass(54));
         Integer integer = new Integer(54);
