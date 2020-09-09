@@ -1,3 +1,4 @@
+// Objects can’t be created from the Abstract classes
 
 abstract class Human
 {
@@ -20,6 +21,7 @@ public class AbstractDemo
 {
 	public static void main(String[] args)
 	{
-		Human obj = new Man();
+		Human obj = new Man(); // Objects can be created from the classes which extends abstract class
+
 	}
 }
