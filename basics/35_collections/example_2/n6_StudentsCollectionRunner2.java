@@ -5,6 +5,8 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 
+//https://www.youtube.com/watch?v=L4TfytB9e9Q&t=64s&ab_channel=Telusko
+
 class v_com
 implements Comparator<n6_Student>
 {
