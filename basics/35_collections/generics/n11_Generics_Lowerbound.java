@@ -23,7 +23,7 @@ public class n11_Generics_Lowerbound {
 		addCat(catList);
 
 		// compile time error
-		// can not add list of subclass RedCat of Cat class
+		// can not add list of subclass blackCat of Cat class
 		// addCat(blackCatList);
 
 		// compile time error
