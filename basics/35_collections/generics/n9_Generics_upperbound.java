@@ -3,6 +3,10 @@ package com.basics.packageone;
 import java.util.Arrays;
 import java.util.List;
 
+
+// upper bound means ..upper is bounded ..lower is free..free to choose from lower range
+// lower bound means.. lower is bounded.. upper is free...free to choose from upper range
+
 public class n9_Generics_upperbound {
 
 	public static double sum(List<? extends Number> numberlist) {
