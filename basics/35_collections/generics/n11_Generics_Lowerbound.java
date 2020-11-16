@@ -3,6 +3,9 @@ package com.basics.packageone;
 import java.util.ArrayList;
 import java.util.List;
 
+// upper bound means ..upper is bounded ..lower is free..free to choose from lower range
+// lower bound means.. lower is bounded.. upper is free...free to choose from upper range
+
 public class n11_Generics_Lowerbound {
 
 	public static void addCat(List<? super Cat> catList) {
