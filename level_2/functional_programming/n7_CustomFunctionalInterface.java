@@ -27,8 +27,6 @@ class SysOutConsumer implements Consumer<Integer> {
 class SupplierDemo implements Supplier<String>{
 	// Supplier accepts nothing and returns anything;
 
-	// List<String> list1 = Arrays.asList("a");
-
 	@Override
 	public String get() {
 		// TODO Auto-generated method stub
